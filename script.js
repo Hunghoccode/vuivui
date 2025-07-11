@@ -1,12 +1,10 @@
-var love = document.getElementById("love");
-var no_love =document.getElementById("no-love");
+const love = document.getElementById("love");
+const nolove = document.getElementById("no-love");
 
-love.addEventListener("click", myFunction);
-function myFunction(){
- alert('Mình Biết Mà ahihi')
-}
+love.addEventListener("click", () => {
+  alert("Mình biết mà ahihi 💖");
+});
 
-no_love.addEventListener("mouseover",lovefunction);
-function lovefunction(){
-   no_love.classList.toggle('move')
-}
+nolove.addEventListener("mouseover", () => {
+  nolove.classList.toggle("move");
+});
